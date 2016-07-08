@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.danielprimo.sounddesk.Desktop_go"
+    tools:showIn="@layout/activity_desktop_go"
+    android:id="@+id/Desktop_id">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:baselineAligned="false"
+        android:id="@+id/linear_5d"
+        android:showDividers="beginning|end"
+        android:contextClickable="false"
+        android:measureWithLargestChild="false">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/Ambience_text"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Ambiance"
+            android:visibility="invisible"
+            android:onClick="ambienceLayout" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/Foley_text"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="Foley"
+            android:visibility="invisible"
+            android:onClick="foleyLayout" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/soundEffects_text"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Sound Effects"
+            android:visibility="invisible"
+            android:onClick="soundEffectsLayout" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/music_text"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Music"
+            android:visibility="invisible"
+            android:onClick="musicLayout" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/dialogue_text"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Dialogue"
+            android:visibility="invisible"
+            android:onClick="dialogueLayout" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:id="@+id/central_card"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="showOption_centralCard" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="960dp"
+        android:layout_height="180dp"
+        android:gravity="bottom|right"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:measureWithLargestChild="false">
+
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/card1"
+            android:onClick="getCard1" />
+
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/card2"
+            android:layout_marginLeft="10dp"
+            android:onClick="getCard2" />
+
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/card3"
+            android:layout_marginLeft="10dp"
+            android:onClick="getCard3" />
+
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/card4"
+            android:layout_marginLeft="10dp"
+            android:onClick="getCard4" />
+
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/card5"
+            android:layout_marginLeft="10dp"
+            android:onClick="getCard5" />
+
+        <ImageButton
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:id="@+id/card6"
+            android:layout_marginLeft="10dp"
+            android:onClick="getCard6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="415dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/linear_5d"
+        android:layout_toEndOf="@+id/linear_5d"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayout2">
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="80dp"
+            android:id="@+id/hist_1"
+            android:onClick="reBack1"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="80dp"
+            android:id="@+id/hist_2"
+            android:layout_marginLeft="5dp"
+            android:onClick="reBack2"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="80dp"
+            android:id="@+id/hist_3"
+            android:layout_marginLeft="5dp"
+            android:onClick="reBack3"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="80dp"
+            android:id="@+id/hist_4"
+            android:layout_marginLeft="5dp"
+            android:onClick="reBack4"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="80dp"
+            android:id="@+id/hist_5"
+            android:layout_marginLeft="5dp"
+            android:onClick="reBack5"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="80dp"
+            android:id="@+id/hist_6"
+            android:layout_marginLeft="5dp"
+            android:onClick="reBack6"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="80dp"
+            android:id="@+id/hist_7"
+            android:layout_marginLeft="5dp"
+            android:onClick="reBack7"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="40dp"
+        android:layout_height="160dp"
+        android:visibility="invisible"
+        android:id="@+id/option_card"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/central_card"
+        android:layout_toStartOf="@+id/central_card"
+        android:layout_marginRight="10dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/acept"
+            android:onClick="aceptCard"
+            android:background="@drawable/acept" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/rejeita"
+            android:onClick="rejectCard"
+            android:background="@drawable/reject" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/sons"
+            android:onClick="showSounds"
+            android:background="@drawable/sound_button" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/sonsHist"
+            android:background="@drawable/sol_hist"
+            android:onClick="showSoundsHist" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/seeMoreButton"
+        android:background="@drawable/see_more"
+        android:onClick="moreCards"
+        android:visibility="invisible"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="180dp"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/seeMoreButton"
+        android:layout_toStartOf="@+id/seeMoreButton"
+        android:id="@+id/showSounds"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/seeMoreButton"
+            android:layout_toStartOf="@+id/seeMoreButton"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" >
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/checkBox1" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/checkBox2" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/checkBox3" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/checkBox4" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/checkBox5" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/checkBox6" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/checkBox7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/musicName1"
+                    android:gravity="bottom|left|top"
+                    android:onClick="playMusic1"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/musicName2"
+                    android:gravity="bottom|left|top"
+                    android:onClick="playMusic2"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/musicName3"
+                    android:gravity="bottom|left|top"
+                    android:onClick="playMusic3"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/musicName4"
+                    android:gravity="bottom|left|top"
+                    android:onClick="playMusic4"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/musicName5"
+                    android:gravity="bottom|left|top"
+                    android:onClick="playMusic5"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/musicName6"
+                    android:gravity="bottom|left|top"
+                    android:onClick="playMusic6"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/musicName7"
+                    android:gravity="bottom|left|top"
+                    android:onClick="playMusic7"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:background="#ffffff">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="OK"
+                android:id="@+id/ok_button"
+                android:textSize="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="okButton" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:layout_alignTop="@+id/central_card"
+        android:layout_toLeftOf="@+id/option_card"
+        android:layout_toStartOf="@+id/option_card"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:id="@+id/listHistorySounds"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/soundHist1"
+            android:gravity="bottom|top"
+            android:onClick="playHistory1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/soundHist2"
+            android:gravity="bottom|top"
+            android:onClick="playHistory2"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/soundHist3"
+            android:gravity="bottom|top"
+            android:onClick="playHistory3"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/soundHist4"
+            android:gravity="bottom|top"
+            android:onClick="playHistory4"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/soundHist5"
+            android:gravity="bottom|top"
+            android:onClick="playHistory5"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/soundHist6"
+            android:gravity="bottom|top"
+            android:onClick="playHistory6"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Clear"
+            android:id="@+id/clearHist"
+            android:layout_gravity="right"
+            android:onClick="clearHistory" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="History"
+        android:id="@+id/allHistory"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignLeft="@+id/linearLayout2"
+        android:layout_alignStart="@+id/linearLayout2"
+        android:onClick="fullLayout"
+        android:background="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/central_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:gravity="center|center_vertical|top"
+        android:id="@+id/layout_types">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:id="@+id/type_1"
+            android:onClick="showType1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:id="@+id/type_2"
+            android:onClick="showType2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:id="@+id/type_3"
+            android:onClick="showType3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:id="@+id/type_4"
+            android:onClick="showType4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:id="@+id/type_5"
+            android:onClick="showType5"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

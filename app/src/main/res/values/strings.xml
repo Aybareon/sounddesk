@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SoundDesk</string>
+    <string name="action_settings">Settings</string>
+    <string name="Title_layot1">Welcome to SoundDesk</string>
+    <string name="Tap_layout1">Tap...</string>
+    <string name="title_activity_choose_theme">choose_theme</string>
+    <string name="chooseScenario">Choose Scenario</string>
+    <string name="title_activity_desktop_go">Desktop_go</string>
+    <string name="title_activity_sounds__layout">sounds_Layout</string>
+</resources>
